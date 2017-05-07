@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.widget.Toolbar
 
-
+import travellog.travellog.fragments.MapFragment
 import travellog.travellog.fragments.OneFragment
 
 
@@ -37,7 +37,8 @@ class TravelActivity : AppCompatActivity() {
 
     private fun setupViewPager(viewPager: ViewPager) {
         val adpter = ViewPagerAdapter(supportFragmentManager)
-        adpter.addFragment(OneFragment(), "ONE")
+        //adpter.addFragment(OneFragment(), "ONE")
+        adpter.addFragment(MapFragment(), "MAP")
         viewPager.adapter = adpter
     }
 
